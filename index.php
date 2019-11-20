@@ -28,7 +28,7 @@ if(isset($_POST['number'])){
   		sumDigits($num);
 	}
 	else{
-		echo "This is not a number. Please try again."
+		echo "This is not a number. Please try again.";
 	}
 }
 else{
