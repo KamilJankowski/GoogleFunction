@@ -18,4 +18,3 @@ else{
 	echo "Please go back to the from.";
 }
 
-?>
