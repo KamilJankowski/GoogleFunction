@@ -24,7 +24,12 @@ function sumDigits(int $num) {
 //Read the number and display the result
 if(isset($_POST['number'])){
   $num=$_POST['number'];
-  sumDigits($num);
+	if(is_numeric($num)){
+  		sumDigits($num);
+	}
+	else{
+		echo "This is not a number. Please try again."
+	}
 }
 else{
 	echo "No result.";
