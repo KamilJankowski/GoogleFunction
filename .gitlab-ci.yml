@@ -8,8 +8,6 @@ deploy_production:
   script:
   - echo $SERVICE_ACCOUNT > /tmp/$CI_PIPELINE_ID.json
   - gcloud auth activate-service-account --key-file /tmp/$CI_PIPELINE_ID.json
-  - git clone https://github.com/KamilJankowski/GoogleFunction.git
-  - cd GoogleFunction
   - gcloud --quiet --project $PROJECT_ID app deploy
  
     
